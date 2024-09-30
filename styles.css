@@ -1,22 +1,27 @@
-body {
-    font-family: Arial, sans-serif;
+[30/9/24, 8:44:25 p. m.] Clovis: body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
 header {
-    background-color: #f4f4f4;
-    padding: 10px 0;
+    background-color: #ba5970;
+    color: #fff;
+    padding: 15px 0;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
+    font-family: 'Verdana';
 }
 
 nav ul {
-    list-style-type: none;
+    list-
+[30/9/24, 8:44:26 p. m.] Clovis: style-type: none;
     padding: 0;
 }
 
@@ -25,16 +30,54 @@ nav ul li {
     margin: 0 10px;
 }
 
-section {
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main section {
     padding: 20px;
     border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.faq-item h3 {
+    cursor: pointer;
+    color: #ba5970;
+    margin: 0;
+}
+
+.faq-content {
+    display: none;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
 }
 
 footer {
-    background-color: #f4f4f4;
+    background-color: #baab7f;
+    color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
+
 a[href^="https://wa.me"] {
     display: inline-block;
     background-color: #25D366;
@@ -48,4 +91,3 @@ a[href^="https://wa.me"] {
 a[href^="https://wa.me"]:hover {
     background-color: #128C7E;
 }
- ⁠
