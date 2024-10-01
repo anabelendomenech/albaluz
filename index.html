@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Albaluz - Alquiler de Vestidos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
-        <h1>Albaluz</h1>
-        <nav>
+        <div class="logo">Albaluz</div>
+        <nav class="main-nav">
             <ul>
+                <li><a href="#bienvenida">Bienvenida</a></li>
                 <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
                 <li><a href="#como-funciona">Cómo Funciona</a></li>
                 <li><a href="#categorias">Categorías</a></li>
@@ -24,17 +27,23 @@
     </header>
 
     <main>
-        <section id="sobre-nosotros">
+        <section id="bienvenida" class="fullscreen">
+            <h1>Albaluz</h1>
+            <p>Bienvenidas a la revolución de la moda.</p>
+            <div class="scroll-indicator">&#8595; Desliza para explorar &#8595;</div>
+        </section>
+
+        <section id="sobre-nosotros" class="fullscreen">
             <h2>Sobre Nosotros</h2>
             <p>Descripción breve del equipo y la misión de Albaluz.</p>
         </section>
 
-        <section id="como-funciona">
+        <section id="como-funciona" class="fullscreen">
             <h2>Cómo Funciona</h2>
             <p>Guía paso a paso sobre el proceso de alquiler.</p>
         </section>
 
-        <section id="categorias">
+        <section id="categorias" class="fullscreen">
             <h2>Categorías</h2>
             <div class="carousel">
                 <div class="carousel-item"><img src="img/vestidos-cortos.jpg" alt="Vestidos Cortos"><p>Vestidos Cortos</p></div>
@@ -47,12 +56,12 @@
             <p>*La tienda está en proceso de actualización.</p>
         </section>
 
-        <section id="beneficios">
+        <section id="beneficios" class="fullscreen">
             <h2>Beneficios</h2>
             <p>Ventajas de alquilar con nosotros.</p>
         </section>
 
-        <section id="faq">
+        <section id="faq" class="fullscreen">
             <h2>Preguntas Frecuentes</h2>
             <div class="faq-item">
                 <h3>¿Cuál es tu política de devoluciones?</h3>
@@ -60,15 +69,14 @@
                     <p>La respuesta a esta pregunta...</p>
                 </div>
             </div>
-            <!-- Más preguntas pueden añadirse aquí con la misma estructura -->
         </section>
 
-        <section id="blog">
+        <section id="blog" class="fullscreen">
             <h2>Blog</h2>
             <p>Artículos y consejos sobre moda, tendencias y más.</p>
         </section>
 
-        <section id="comentarios">
+        <section id="comentarios" class="fullscreen">
             <h2>Comentarios</h2>
             <p>Espacio para comentarios de clientas y formulario para dejar opiniones.</p>
         </section>
@@ -82,4 +90,6 @@
 
     <script src="scripts.js"></script>
 </body>
+
 </html>
+
