@@ -1,56 +1,85 @@
-[30/9/24, 8:44:25 p. m.] Clovis: body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body, html {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #f8f8f8;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
+    background-color: #f8f8f8;
 }
 
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: #ba5970;
-    color: #fff;
-    padding: 15px 0;
-    text-align: center;
+    color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
-header h1 {
+.logo {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
     margin: 0;
-    font-family: 'Verdana';
-}
-
-nav ul {
-    list-
-[30/9/24, 8:44:26 p. m.] Clovis: style-type: none;
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
+.main-nav ul li {
     margin: 0 10px;
 }
 
-nav ul li a {
+.main-nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
-main section {
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
+.fullscreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#bienvenida {
+    background-image: url('img/fondo.jpg'); /* Asegúrate de tener una imagen llamada fondo.jpg */
+    color: white;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2em;
+    color: white;
 }
 
 .carousel {
     display: flex;
     overflow-x: auto;
     scrollbar-width: none;
+    justify-content: center;
 }
 
 .carousel-item {
     flex: 0 0 auto;
     width: 200px;
     margin-right: 10px;
+    text-align: center;
 }
 
 .carousel img {
@@ -69,6 +98,7 @@ main section {
     padding: 10px;
     background-color: #f0f0f0;
     border-radius: 5px;
+    margin-top: 5px;
 }
 
 footer {
@@ -90,4 +120,41 @@ a[href^="https://wa.me"] {
 
 a[href^="https://wa.me"]:hover {
     background-color: #128C7E;
+}
+
+@media (max-width: 768px) {
+    .main-nav ul {
+        display: none;
+    }
+
+    .main-nav.active ul {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        background-color: #ba5970;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .main-nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
 }
