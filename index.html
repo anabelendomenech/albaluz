@@ -1,19 +1,16 @@
-<!DOCTYPE html>
+[30/9/24, 9:20:08 p. m.] Clovis: <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Albaluz - Alquiler de Vestidos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
         <div class="logo">Albaluz</div>
         <nav class="main-nav">
             <ul>
-                <li><a href="#bienvenida">Bienvenida</a></li>
                 <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
                 <li><a href="#como-funciona">Cómo Funciona</a></li>
                 <li><a href="#categorias">Categorías</a></li>
@@ -27,19 +24,27 @@
     </header>
 
     <main>
+        <section id="inicio" class="fullscreen">
+            <h1>ALBALUZ</h1>
+            <p>ALQUILER DE VESTIDOS</p>
+            <div class="scroll-indicator" id="indicator">&#8595; Desliza para explorar &#8595;</div>
+        </section>
+
         <section id="bienvenida" class="fullscreen">
-            <h1>Albaluz</h1>
-            <p>Bienvenidas a la revolución de la moda.</p>
-            <div class="scroll-indicator">&#8595; Desliza para explorar &#8595;</div>
+            <h2>Bienvenidas a la Revolución de la Moda</h2>
+            <p>Descubre la nueva forma de experimentar la elegancia sin comprometer tu estilo ni tu bolsillo.</p>
+            <img src="img/bienvenida.jpg" alt="Bienvenida" class="responsive-img">
         </section>
 
         <section id="sobre-nosotros" class="fullscreen">
             <h2>Sobre Nosotros</h2>
+            <img src="img/sobre-nosotros.jpg" alt="Sobre Nosotros" class="responsive-img">
             <p>Descripción breve del equipo y la misión de Albaluz.</p>
         </section>
 
         <section id="como-funciona" class="fullscreen">
             <h2>Cómo Funciona</h2>
+            <img src="img/como-funciona.jpg" alt="Cómo Funciona" class="responsive-img">
             <p>Guía paso a paso sobre el proceso de alquiler.</p>
         </section>
 
@@ -53,12 +58,15 @@
                 <div class="carousel-item"><img src="img/accesorios.jpg" alt="Accesorios"><p>Accesorios</p></div>
                 <div class="carousel-item"><img src="img/trajes-hombre.jpg" alt="Trajes de Hombre"><p>Trajes de Hombre</p></div>
             </div>
-            <p>*La tienda está en proceso de actualización.</p>
         </section>
 
         <section id="beneficios" class="fullscreen">
             <h2>Beneficios</h2>
-            <p>Ventajas de alquilar con nosotros.</p>
+            <div class="carousel">
+                <div class="carousel-item"><img src="img/beneficio1.jpg" alt="Beneficio 1"><p>Beneficio 1</p></div>
+                <div class="carousel-item"><img src="img/beneficio2.jpg" alt="Beneficio 2"><p>Beneficio 2</p></div>
+                <div class="carousel-item"><img src="img/beneficio3.jpg" alt="Beneficio 3"><p>Beneficio 3</p></div>
+            </div>
         </section>
 
         <section id="faq" class="fullscreen">
@@ -71,14 +79,25 @@
             </div>
         </section>
 
-        <section id="blog" class="fullscreen">
+        <sec
+[30/9/24, 9:20:09 p. m.] Clovis: tion id="blog">
             <h2>Blog</h2>
-            <p>Artículos y consejos sobre moda, tendencias y más.</p>
+            <div class="row">
+                <div class="blog-post"><img src="img/blog1.jpg" alt="Blog 1"><p>Titulo Blog 1</p></div>
+                <div class="blog-post"><img src="img/blog2.jpg" alt="Blog 2"><p>Titulo Blog 2</p></div>
+                <div class="blog-post"><img src="img/blog3.jpg" alt="Blog 3"><p>Titulo Blog 3</p></div>
+            </div>
         </section>
 
         <section id="comentarios" class="fullscreen">
             <h2>Comentarios</h2>
-            <p>Espacio para comentarios de clientas y formulario para dejar opiniones.</p>
+            <form>
+                <textarea placeholder="Escribe tu experiencia"></textarea>
+                <div class="rating">
+                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
 
@@ -90,6 +109,7 @@
 
     <script src="scripts.js"></script>
 </body>
-
 </html>
+
+
 
